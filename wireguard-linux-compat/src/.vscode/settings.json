@@ -1,0 +1,14 @@
+{
+    "explorer.compactFolders": true,
+    "explorer.excludeGitIgnore": true,
+    "files.exclude": {
+        ".*": true,
+        ".vscode": false,
+        "*.o": true
+    },
+    "files.associations": {
+        "*.m4i": "m4",
+        "*.c": "c",
+        "*.h": "h",
+    },
+}

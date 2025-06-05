@@ -1,0 +1,2 @@
+
+wireguard-y += rkems/rkem-ml/gauss_sample.o rkems/rkem-ml/indcpa.o rkems/rkem-ml/kem.o rkems/rkem-ml/ntt.o rkems/rkem-ml/poly.o rkems/rkem-ml/polyvec.o rkems/rkem-ml/randombytes.o rkems/rkem-ml/reduce.o rkems/rkem-ml/rkem.o rkems/rkem-ml/symmetric-shake.o rkems/rkem-ml/verify.o fips202.o

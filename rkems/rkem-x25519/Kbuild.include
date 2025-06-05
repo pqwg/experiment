@@ -1,0 +1,2 @@
+
+wireguard-y += rkem/curve25519-donna.o fips202.o rkem/randombytes.o rkem/rkem.o

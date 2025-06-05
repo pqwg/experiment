@@ -1,0 +1,1 @@
+wireguard-y += kems/dagger/keccak/KeccakSpongeWidth1600.o kems/dagger/keccak/KeccakP-1600-opt64.o

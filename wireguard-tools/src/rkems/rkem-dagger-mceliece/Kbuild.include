@@ -1,0 +1,4 @@
+
+include kems/mceliece/Kbuild.include
+
+wireguard-y += rkem/rkem.o

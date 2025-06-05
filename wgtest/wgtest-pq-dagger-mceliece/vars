@@ -1,0 +1,3 @@
+
+export KEM=mceliece
+export RKEM=rkem-dagger-mceliece

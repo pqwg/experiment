@@ -1,0 +1,3 @@
+
+export KEM=x25519
+export RKEM=rkem-ml

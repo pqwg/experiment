@@ -1,0 +1,7 @@
+
+include $(src)/kems/dagger/Kbuild.include
+include $(src)/kems/mceliece/Kbuild.include
+
+ccflags-y += -DMCRKEM
+
+wireguard-y += rkems/rkem-dagger-mceliece/rkem.o

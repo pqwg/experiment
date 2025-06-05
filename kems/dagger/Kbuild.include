@@ -1,0 +1,8 @@
+ccflags-y += -msse -mavx -mavx2 -maes -Wno-vla -Wno-missing-prototypes -isystem $(shell $(CC) -print-file-name=include)
+
+wireguard-y += kems/dagger/cbd.o kems/dagger/crypto_stream_aes256ctr.o
+wireguard-y += fips202.o kems/dagger/fips202x4.o kems/dagger/poly.o
+wireguard-y += kems/dagger/pack_unpack.o kems/dagger/SABER_indcpa.o
+wireguard-y += kems/dagger/poly_mul.o kems/dagger/kem.o kems/dagger/saber.o kems/dagger/randombytes.o
+
+include $(src)/kems/dagger/keccak/Kbuild.include

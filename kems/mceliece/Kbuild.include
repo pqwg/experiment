@@ -1,0 +1,20 @@
+
+ifeq ($(wildcard $(src)/keccak/align.h),)
+cmd_include_path_prefix := $(srctree)/$(src)
+else
+cmd_include_path_prefix := $(src)
+endif
+
+ccflags-y += -I$(cmd_include_path_prefix) -Wno-declaration-after-statement
+ccflags-y += -msse -mavx -mavx2 -isystem $(shell $(CC) -print-file-name=include)
+
+wireguard-y += kems/mceliece/benes.o kems/mceliece/bm.o kems/mceliece/consts.o 
+wireguard-y += kems/mceliece/decrypt.o kems/mceliece/encrypt.o  kems/mceliece/mcbuf.o
+wireguard-y += kems/mceliece/fft.o kems/mceliece/fft_tr.o kems/mceliece/gf.o
+wireguard-y += kems/mceliece/int32_minmax_x86.o kems/mceliece/int32_sort.o
+wireguard-y += kems/mceliece/operations.o kems/mceliece/syndrome_asm.o
+wireguard-y += kems/mceliece/transpose_64x128_sp_asm.o kems/mceliece/transpose_64x256_sp_asm.o
+wireguard-y += kems/mceliece/uint32_sort.o kems/mceliece/update_asm.o kems/mceliece/vec128_mul_asm.o
+wireguard-y += kems/mceliece/vec256_ama_asm.o kems/mceliece/vec256.o kems/mceliece/vec256_maa_asm.o
+wireguard-y += kems/mceliece/vec256_mul_asm.o kems/mceliece/vec_reduce_asm.o kems/mceliece/vec128.o
+wireguard-y += kems/mceliece/kem.o fips202.o

@@ -1,0 +1,5 @@
+
+
+wireguard-y = kems/mceliece/aes256ctr.o kems/mceliece/benes.o kems/mceliece/bm.o kems/mceliece/controlbits.o kems/mceliece/decrypt.o kems/mceliece/encrypt.o kems/mceliece/fft.o \
+		  kems/mceliece/fft_tr.o kems/mceliece/gf.o kems/mceliece/operations.o kems/mceliece/pk_gen.o kems/mceliece/sk_gen.o kems/mceliece/transpose.o kems/mceliece/util.o kems/mceliece/vec.o fips202.o kems/mceliece/aes.o kems/mceliece/randombytes.o
+

@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "*.m4i": "m4",
+        "encoding.h": "c",
+        "subcommands.h": "c",
+        "containers.h": "c",
+        "wireguard.h": "c",
+        "kem.h": "c",
+        "types.h": "c",
+        "curve25519.h": "c",
+        "stdbool.h": "c",
+        "chrono": "c",
+        "text_encoding": "c",
+        "typeinfo": "c",
+        "*.inc": "c",
+        "config.h": "c",
+        "rkem.h": "c"
+    }
+}

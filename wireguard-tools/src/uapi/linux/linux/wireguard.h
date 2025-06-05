@@ -1,0 +1,1 @@
+../../../../../wireguard-linux-compat/src/uapi/pqwireguard.h

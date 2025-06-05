@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "defines": [
+                "-DCONFIG_64BIT",
+                "-D__KERNEL__",
+                "-DDEBUG",
+                "-DMODULE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-arm64",
+            "compileCommands": [
+                "${workspaceFolder}/compile_commands.json"
+            ],
+            "mergeConfigurations": false,
+            "forcedInclude": [
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include/linux/compiler-version.h",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include/linux/kconfig.h",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include/linux/compiler_types.h"
+            ],
+            "includePath": [
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/arch/arm64/include",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/arch/arm64/include/generated",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/arch/arm64/include/uapi",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/arch/arm64/include/generated/uapi",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include/uapi",
+                "/usr/lib/modules/6.13.0-2-aarch64-ARCH/build/include/generated/uapi"
+            ]
+        }
+    ],
+    "version": 4
+}
